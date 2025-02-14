@@ -29,6 +29,20 @@
               cardShadow: "0px 5px 0px 0px #191A23",
             },
           },
+          screens: {
+            xl_1240: { max: "1240px" },
+            md_1050: { max: "1050px" },
+            md_985: { max: "985px" },
+            md_955: { max: "955px" },
+            md_912: { max: "912px" },
+            md_800: { max: "800px" },
+            md_730: { max: "730px" },
+            md_600: { max: "600px" },
+            md_562: { max: "562px" },
+            md_480: { max: "480px" },
+            md_442: { max: "442px" },
+            sm_410: { max: "410px" },
+          },
         },
       };
     </script>
@@ -44,9 +58,11 @@
   <body>
     <div class="w-full max-w-[1440px] mx-auto border border-[red]">
       <header
-        class="w-full max-w-[1240px] mx-auto flex justify-between mt-[60px] items-center gap-[20px]"
+        class="w-full max-w-[1240px] mx-auto flex justify-between mt-[60px] items-center gap-[20px] xl_1240:px-[15px] md_955:mt-[30px]"
       >
-        <div class="w-full max-w-[219.54px] flex justify-center items-center">
+        <div
+          class="w-full max-w-[219.54px] flex justify-center items-center md_955:max-w-[166.54px]"
+        >
           <svg
             width="220"
             height="36"
@@ -104,78 +120,113 @@
           </svg>
         </div>
         <nav
-          class="w-full max-w-[811px] flex justify-between items-center gap-[15px]"
+          class="w-full max-w-[811px] flex justify-between items-center gap-[15px] md_955:max-w-[535px] md_955:gap-[8px] md_730:hidden"
         >
           <a
             href=""
-            class="font-SpaceGrotesk font-normal text-[20px] leading-[28px] hover:underline"
+            class="font-SpaceGrotesk font-normal text-[20px] leading-[28px] hover:underline md_955:text-[16px]"
           >
             About us
           </a>
           <a
             href=""
-            class="font-SpaceGrotesk font-normal text-[20px] leading-[28px] hover:underline"
+            class="font-SpaceGrotesk font-normal text-[20px] leading-[28px] hover:underline md_955:text-[16px]"
           >
             Services
           </a>
           <a
             href=""
-            class="font-SpaceGrotesk font-normal text-[20px] leading-[28px] hover:underline"
+            class="font-SpaceGrotesk font-normal text-[20px] leading-[28px] hover:underline md_955:text-[16px]"
           >
             Use Cases
           </a>
           <a
             href=""
-            class="font-SpaceGrotesk font-normal text-[20px] leading-[28px] hover:underline"
+            class="font-SpaceGrotesk font-normal text-[20px] leading-[28px] hover:underline md_955:text-[16px]"
           >
             Pricing
           </a>
           <a
             href=""
-            class="font-SpaceGrotesk font-normal text-[20px] leading-[28px] hover:underline"
+            class="font-SpaceGrotesk font-normal text-[20px] leading-[28px] hover:underline md_955:text-[16px]"
           >
             Blog
           </a>
           <button
-            class="w-full max-w-[231px] py-[20px] rounded-[14px] border border-dark font-SpaceGrotesk font-normal text-[20px] leading-[28px] transition hover:bg-dark hover:text-white"
+            class="w-full max-w-[231px] py-[20px] rounded-[14px] border border-dark font-SpaceGrotesk font-normal text-[20px] leading-[28px] transition hover:bg-dark hover:text-white md_955:py-[12px] md_955:max-w-[168px] md_955:text-[16px]"
           >
             Request a quote
           </button>
         </nav>
+        <div
+          class="w-[30px] h-[30px] flex justify-center items-center hidden md_730:flex cursor-pointer"
+        >
+          <svg
+            width="16"
+            height="14"
+            viewBox="0 0 16 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1H15"
+              stroke="black"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M1 13H15"
+              stroke="black"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M1 7H15"
+              stroke="black"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
       </header>
       <main>
         <section
-          class="w-full max-w-[1240px] mx-auto flex justify-between gap-[15px] mt-[70px]"
+          class="w-full max-w-[1240px] mx-auto flex justify-between gap-[15px] mt-[70px] xl_1240:px-[15px] md_730:flex-col md_730:items-center"
         >
           <div class="w-full max-w-[531px]">
             <h1
-              class="font-SpaceGrotesk font-medium text-[60px] leading-[76.56px] text-black"
+              class="font-SpaceGrotesk font-medium text-[60px] leading-[76.56px] text-black md_1050:text-[55px] md_1050:leading-[66px] md_955:text-[50px] md_955:leading-[55px] md_730:text-[45px] md_730:leading-[50px] md_730:text-center sm_410:text-[35px] sm_410:leading-[40px]"
             >
               Navigating the digital landscape for success
             </h1>
             <p
-              class="mt-[35px] font-SpaceGrotesk font-normal text-[20px] leading-[28px] text-black max-w-[498px]"
+              class="mt-[35px] font-SpaceGrotesk font-normal text-[20px] leading-[28px] text-black max-w-[498px] md_730:text-[18px] md_730:leading-[25px] md_730:mt-[20px] md_730:text-center"
             >
               Our digital marketing agency helps businesses grow and succeed
               online through a range of services including SEO, PPC, social
               media marketing, and content creation.
             </p>
             <button
-              class="mt-[35px] w-full max-w-[264px] bg-dark rounded-[14px] border border-dark font-SpaceGrotesk font-normal text-[20px] leading-[28px] text-white hover:bg-white hover:text-dark transition py-[20px]"
+              class="mt-[35px] w-full max-w-[264px] bg-dark rounded-[14px] border border-dark font-SpaceGrotesk font-normal text-[20px] leading-[28px] text-white hover:bg-white hover:text-dark transition py-[20px] md_730:max-w-[210px] md_730:text-[18px] md_730:py-[15px] md_730:mx-auto md_730:block"
             >
               Book a consultation
             </button>
           </div>
-          <div class="w-full max-w-[600.46px]">
+          <div
+            class="w-full max-w-[600.46px] h-[515px] md_730:max-w-[400px] md_730:h-[350px] md_730:mt-[30px]"
+          >
             <img
-              class="w-full"
+              class="w-full h-full object-contain"
               src="./image/hero_illustrationICon.png"
               alt=""
             />
           </div>
         </section>
         <section
-          class="w-full max-w-[1240px] mx-auto mt-[70px] flex justify-between items-center gap-[15px]"
+          class="w-full max-w-[1240px] mx-auto mt-[70px] flex justify-between items-center gap-[15px] xl_1240:px-[15px] md_730:flex-wrap md_730:mt-[30px]"
         >
           <div class="h-[48px]">
             <img src="./image/amazon.png" alt="" />
@@ -196,40 +247,44 @@
             <img src="./image/zoom.png" alt="" />
           </div>
         </section>
-        <section class="mt-[140px] w-full max-w-[1240px] mx-auto">
-          <div class="w-full max-w-[798px] flex justify-between">
+        <section
+          class="mt-[140px] w-full max-w-[1240px] mx-auto xl_1240:px-[15px] md_800:mt-[40px]"
+        >
+          <div
+            class="w-full max-w-[798px] flex justify-between md_800:gap-[15px] md_562:flex-col"
+          >
             <h1
-              class="w-full max-w-[178px] bg-green rounded-[7px] font-SpaceGrotesk text-[40px] font-[500] leading-[51.04px] text-black text-center py-[8px]"
+              class="w-full max-w-[178px] bg-green rounded-[7px] font-SpaceGrotesk text-[40px] font-[500] leading-[51.04px] text-black text-center py-[8px] md_562:mx-auto"
             >
               Services
             </h1>
             <p
-              class="w-full max-w-[580px] font-SpaceGrotesk font-[400] text-[18px] leading-[22.97px] text-black flex items-center"
+              class="w-full max-w-[580px] font-SpaceGrotesk font-[400] text-[18px] leading-[22.97px] text-black flex items-center md_730:text-[16px] md_562:text-center md_562:mx-auto"
             >
               At our digital marketing agency, we offer a range of services to
               help businesses grow and succeed online. These services include:
             </p>
           </div>
           <div
-            class="mt-[80px] w-full max-w-[1240px] flex justify-between gap-[40px] flex-wrap"
+            class="mt-[80px] w-full max-w-[1240px] justify-between gap-[40px] grid grid-cols-2 md_912:grid-cols-1"
           >
             <div
-              class="w-full max-w-[600px] p-[50px] bg-gray rounded-[45px] shadow-cardShadow flex justify-between items-center"
+              class="w-full max-w-[600px] p-[50px] bg-gray rounded-[45px] shadow-cardShadow flex justify-between items-center md_912:mx-auto md_480:flex-col-reverse md_480:gap-[15px] md_480:p-[20px]"
             >
-              <div class="w-full max-w-[221px]">
+              <div class="w-full max-w-[221px] md_480:max-w-[100%]">
                 <h1
-                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content]"
+                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content] md_985:text-[26px] md_985:leading-[34px]"
                 >
                   Search engine
                 </h1>
                 <h1
-                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content]"
+                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content] md_985:text-[26px] md_985:leading-[34px]"
                 >
                   optimization
                 </h1>
                 <a
                   href=""
-                  class="mt-[93px] w-full max-w-[164px] flex justify-between items-center gap-[15px] font-SpaceGrotesk text-[20px] leading-[28px] font-[400] text-black"
+                  class="mt-[93px] w-full max-w-[164px] flex justify-between items-center gap-[15px] font-SpaceGrotesk text-[20px] leading-[28px] font-[400] text-black md_480:mt-[15px] md_480:mx-auto"
                 >
                   <span
                     class="w-[41px] h-[41px] flex justify-center items-center bg-white rounded-full"
@@ -258,22 +313,22 @@
               </div>
             </div>
             <div
-              class="w-full max-w-[600px] p-[50px] bg-green rounded-[45px] shadow-cardShadow flex justify-between items-center"
+              class="w-full max-w-[600px] p-[50px] bg-green rounded-[45px] shadow-cardShadow flex justify-between items-center md_912:mx-auto md_480:flex-col-reverse md_480:gap-[15px] md_480:p-[20px]"
             >
-              <div class="w-full max-w-[221px]">
+              <div class="w-full max-w-[221px] md_480:max-w-[100%]">
                 <h1
-                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content]"
+                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content] md_985:text-[26px] md_985:leading-[34px]"
                 >
                   Pay-per-click
                 </h1>
                 <h1
-                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content]"
+                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content] md_985:text-[26px] md_985:leading-[34px]"
                 >
                   advertising
                 </h1>
                 <a
                   href=""
-                  class="mt-[93px] w-full max-w-[164px] flex justify-between items-center gap-[15px] font-SpaceGrotesk text-[20px] leading-[28px] font-[400] text-black"
+                  class="mt-[93px] w-full max-w-[164px] flex justify-between items-center gap-[15px] font-SpaceGrotesk text-[20px] leading-[28px] font-[400] text-black md_480:mt-[15px] md_480:mx-auto"
                 >
                   <span
                     class="w-[41px] h-[41px] flex justify-center items-center bg-dark rounded-full"
@@ -302,22 +357,22 @@
               </div>
             </div>
             <div
-              class="w-full max-w-[600px] p-[50px] bg-dark rounded-[45px] shadow-cardShadow flex justify-between items-center"
+              class="w-full max-w-[600px] p-[50px] bg-dark rounded-[45px] shadow-cardShadow flex justify-between items-center md_912:mx-auto md_480:flex-col-reverse md_480:gap-[15px] md_480:p-[20px]"
             >
-              <div class="w-full max-w-[221px]">
+              <div class="w-full max-w-[221px] md_480:max-w-[100%]">
                 <h1
-                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content]"
+                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content] md_985:text-[26px] md_985:leading-[34px]"
                 >
                   Social Media
                 </h1>
                 <h1
-                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content]"
+                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content] md_985:text-[26px] md_985:leading-[34px]"
                 >
                   Marketing
                 </h1>
                 <a
                   href=""
-                  class="mt-[93px] w-full max-w-[164px] flex justify-between items-center gap-[15px] font-SpaceGrotesk text-[20px] leading-[28px] font-[400] text-white"
+                  class="mt-[93px] w-full max-w-[164px] flex justify-between items-center gap-[15px] font-SpaceGrotesk text-[20px] leading-[28px] font-[400] text-white md_480:mt-[15px] md_480:mx-auto"
                 >
                   <span
                     class="w-[41px] h-[41px] flex justify-center items-center bg-white rounded-full"
@@ -346,22 +401,22 @@
               </div>
             </div>
             <div
-              class="w-full max-w-[600px] p-[50px] bg-gray rounded-[45px] shadow-cardShadow flex justify-between items-center"
+              class="w-full max-w-[600px] p-[50px] bg-gray rounded-[45px] shadow-cardShadow flex justify-between items-center md_912:mx-auto md_480:flex-col-reverse md_480:gap-[15px] md_480:p-[20px]"
             >
-              <div class="w-full max-w-[221px]">
+              <div class="w-full max-w-[221px] md_480:max-w-[100%]">
                 <h1
-                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content]"
+                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content] md_985:text-[26px] md_985:leading-[34px]"
                 >
                   Email
                 </h1>
                 <h1
-                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content]"
+                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content] md_985:text-[26px] md_985:leading-[34px]"
                 >
                   Marketing
                 </h1>
                 <a
                   href=""
-                  class="mt-[93px] w-full max-w-[164px] flex justify-between items-center gap-[15px] font-SpaceGrotesk text-[20px] leading-[28px] font-[400] text-black"
+                  class="mt-[93px] w-full max-w-[164px] flex justify-between items-center gap-[15px] font-SpaceGrotesk text-[20px] leading-[28px] font-[400] text-black md_480:mt-[15px] md_480:mx-auto"
                 >
                   <span
                     class="w-[41px] h-[41px] flex justify-center items-center bg-black rounded-full"
@@ -390,22 +445,22 @@
               </div>
             </div>
             <div
-              class="w-full max-w-[600px] p-[50px] bg-green rounded-[45px] shadow-cardShadow flex justify-between items-center"
+              class="w-full max-w-[600px] p-[50px] bg-green rounded-[45px] shadow-cardShadow flex justify-between items-center md_912:mx-auto md_480:flex-col-reverse md_480:gap-[15px] md_480:p-[20px]"
             >
-              <div class="w-full max-w-[221px]">
+              <div class="w-full max-w-[221px] md_480:max-w-[100%]">
                 <h1
-                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content]"
+                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content] md_985:text-[26px] md_985:leading-[34px]"
                 >
                   Content
                 </h1>
                 <h1
-                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content]"
+                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content] md_985:text-[26px] md_985:leading-[34px]"
                 >
                   Creation
                 </h1>
                 <a
                   href=""
-                  class="mt-[93px] w-full max-w-[164px] flex justify-between items-center gap-[15px] font-SpaceGrotesk text-[20px] leading-[28px] font-[400] text-black"
+                  class="mt-[93px] w-full max-w-[164px] flex justify-between items-center gap-[15px] font-SpaceGrotesk text-[20px] leading-[28px] font-[400] text-black md_480:mt-[15px] md_480:mx-auto"
                 >
                   <span
                     class="w-[41px] h-[41px] flex justify-center items-center bg-black rounded-full"
@@ -434,22 +489,22 @@
               </div>
             </div>
             <div
-              class="w-full max-w-[600px] p-[50px] bg-dark rounded-[45px] shadow-cardShadow flex justify-between items-center"
+              class="w-full max-w-[600px] p-[50px] bg-dark rounded-[45px] shadow-cardShadow flex justify-between items-center md_912:mx-auto md_480:flex-col-reverse md_480:gap-[15px] md_480:p-[20px]"
             >
-              <div class="w-full max-w-[221px]">
+              <div class="w-full max-w-[221px] md_480:max-w-[100%]">
                 <h1
-                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content]"
+                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content] md_985:text-[26px] md_985:leading-[34px]"
                 >
                   Analytics and
                 </h1>
                 <h1
-                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content]"
+                  class="font-SpaceGrotesk font-[500] text-[30px] leading-[38.28px] text-black rounded-[7px] bg-green p-[7px] max-w-[max-content] md_985:text-[26px] md_985:leading-[34px]"
                 >
                   Tracking
                 </h1>
                 <a
                   href=""
-                  class="mt-[93px] w-full max-w-[164px] flex justify-between items-center gap-[15px] font-SpaceGrotesk text-[20px] leading-[28px] font-[400] text-white"
+                  class="mt-[93px] w-full max-w-[164px] flex justify-between items-center gap-[15px] font-SpaceGrotesk text-[20px] leading-[28px] font-[400] text-white md_480:mt-[15px] md_480:mx-auto"
                 >
                   <span
                     class="w-[41px] h-[41px] flex justify-center items-center bg-white rounded-full"
@@ -480,28 +535,28 @@
           </div>
         </section>
         <section
-          class="w-full max-w-[1240px] mx-auto bg-gray mt-[123px] p-[60px] flex justify-between gap-[15px] relative rounded-[45px]"
+          class="w-full max-w-[1240px] mx-auto bg-gray mt-[123px] p-[60px] flex justify-between gap-[15px] relative rounded-[45px] xl_1240:max-w-[calc(100%-20px)] md_1050:p-[45px] md_600:mt-[60px] md_912:max-w-[max-content] md_600:max-w-[calc(100%-25px)] md_442:p-[30px]"
         >
-          <div class="w-full max-w-[500px]">
+          <div class="w-full max-w-[500px] md_912:mx-auto">
             <h1
-              class="font-SpaceGrotesk text-[30px] font-[500] leading-[38.28px] text-black"
+              class="font-SpaceGrotesk text-[30px] font-[500] leading-[38.28px] text-black md_480:text-[26px]"
             >
               Let’s make things happen
             </h1>
             <p
-              class="font-SpaceGrotesk text-[18px] leading-[22.97px] font-[400] text-black mt-[26px]"
+              class="font-SpaceGrotesk text-[18px] leading-[22.97px] font-[400] text-black mt-[26px] md_480:text-[16px]"
             >
               Contact us today to learn more about how our digital marketing
               services can help your business grow and succeed online.
             </p>
             <button
-              class="w-full max-w-[288px] mt-[26px] rounded-[14px] py-[20px] font-SpaceGrotesk text-[20px] font-[400] leading-[28px] text-white bg-dark border border-dark hover:bg-gray hover:text-dark transition"
+              class="w-full max-w-[288px] mt-[26px] rounded-[14px] py-[20px] font-SpaceGrotesk text-[20px] font-[400] leading-[28px] text-white bg-dark border border-dark hover:bg-gray hover:text-dark transition md_600:max-w-[240px] md_600:py-[12px] md_600:text-[18px] md_600:mx-auto md_600:block"
             >
               Get your free proposal
             </button>
           </div>
           <div
-            class="w-full max-w-[360px] absolute right-[135px] top-[-23.5px]"
+            class="w-full max-w-[360px] absolute right-[135px] top-[-23.5px] md_912:hidden"
           >
             <img class="w-full" src="./image/Illustration.png" alt="" />
           </div>
